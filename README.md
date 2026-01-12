@@ -1,0 +1,1 @@
+# waybar para los amigos
