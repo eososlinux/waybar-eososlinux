@@ -10,7 +10,8 @@ window {
 }
 
 window#waybar {
-  background-color: #1a1b26;
+  /* background-color: #1a1b26; */
+  background: rgba(0, 0, 0, 0);
   border-radius: 15px;
   margin-top: 6px;
 }
@@ -93,6 +94,20 @@ window#waybar.hidden {
   background: #222330;
 }
 
+#custom-screenrecording-indicator {
+  margin-top: 6px;
+  margin-left: 2px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  padding-right: 15px;
+  border-radius: 18px;
+  margin-right: 10px;
+  font-size: 8px;
+  font-weight: bold;
+  transition: none;
+  color: #f1f1f1;
+  /* background: transparent; */
+}
 #battery {
   margin-top: 6px;
   margin-left: 8px;
@@ -110,7 +125,7 @@ window#waybar.hidden {
 #battery.charging,
 #battery.plugged {
   color: #161320;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 #battery.critical:not(.charging) {
@@ -216,7 +231,7 @@ window#waybar.hidden {
   border-radius: 10px;
   transition: none;
   color: #7dcfff;
-  background: transparent;
+  /* background: transparent; */
 }
 
 #custom-power {
@@ -231,29 +246,34 @@ window#waybar.hidden {
   font-weight: bold;
   transition: none;
   color: #f1f1f1;
-  background: transparent;
+  /* background: transparent; */
 }
 
-#custom-updates {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #e8a2af;
+/* #custom-updates { */
+/*   margin-top: 6px; */
+/*   margin-left: 8px; */
+/*   padding-left: 10px; */
+/*   padding-right: 10px; */
+/*   margin-bottom: 0px; */
+/*   border-radius: 10px; */
+/*   transition: none; */
+/*   color: #161320; */
+/*   background: #e8a2af; */
+/* } */
+
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
 }
 
-#custom-media {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #f2cdcd;
-}
+/* #custom-media { */
+/*   margin-top: 6px; */
+/*   margin-left: 8px; */
+/*   padding-left: 10px; */
+/*   padding-right: 10px; */
+/*   margin-bottom: 0px; */
+/*   border-radius: 10px; */
+/*   transition: none; */
+/*   color: #161320; */
+/*   background: #f2cdcd; */
+/* } */
