@@ -151,11 +151,10 @@
   },
   "custom/power": {
     "format": "<span color='#f7768e'>⏻</span>",
-    "on-click": "omarchy-menu",
+    "on-click": "omarchy-menu system",
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space",
   },
-
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
