@@ -101,11 +101,11 @@ window#waybar.hidden {
   margin-bottom: 6px;
   padding-right: 15px;
   border-radius: 18px;
-  margin-right: 10px;
-  font-size: 8px;
+  margin-right: 6px;
+  font-size: 12px;
   font-weight: bold;
   transition: none;
-  color: #f1f1f1;
+  color: #ff3b3b;
   /* background: transparent; */
 }
 #battery {
@@ -224,7 +224,7 @@ window#waybar.hidden {
 }
 
 #custom-launcher {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 8px;
   padding-left: 10px;
   padding-right: 5px;
