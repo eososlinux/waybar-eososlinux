@@ -4,9 +4,7 @@
   "height": 20,
   "margin-top": 2,
   "margn-bottom": 0,
-
   //Modules layout
-
   "modules-left": ["custom/launcher", "cpu", "memory", "disk"],
   "modules-center": [
     "hyprland/workspaces",
@@ -14,6 +12,7 @@
     "custom/screenrecording-indicator",
   ],
   "modules-right": [
+    "custom/spotify",
     "bluetooth",
     "network",
     "pulseaudio",
@@ -21,9 +20,7 @@
     "clock",
     "custom/power",
   ],
-
   // Sourced modules
-
   "pulseaudio": {
     "tooltip": false,
     "scroll-step": 5,
@@ -105,7 +102,6 @@
       "<span color='#9ece6a'></span>",
     ],
   },
-
   "clock": {
     "timezone": "America/Argentina/Buenos_Aires",
     "tooltip": true,
@@ -113,36 +109,46 @@
     "format": "{:%H:%M %p}",
     "tooltip-format": "{:%Y-%m-%d}",
   },
-
   "cpu": {
     "interval": 15,
     "format": "<span color='#f7768e'> </span> {}%",
     "max-length": 10,
   },
-
   "disk": {
     "format": "<span color='#e0af68'> </span> {used}",
     "interval": 1,
   },
-
   "memory": {
     "interval": 30,
     "format": "<span color='#7dcfff'> </span> {used}GiB",
     "max-length": 10,
   },
 
+  "custom/spotify": {
+    "format": "{}",
+    "exec": "/home/$USER/.config/system_scripts/mediaplayer.sh",
+    "return-type": "json",
+    "escape": false,
+    "restart-interval": 1,
+    "on-click": "playerctl -p spotify play-pause",
+    "on-scroll-up": "playerctl -p spotify next",
+    "on-scroll-down": "playerctl -p spotify previous",
+    "exec-if": "pgrep spotify",
+    "ignored-players": ["firefox", "chromium", "brave"],
+  },
+
   // "custom/media": {
-  //     "interval": 30,
-  //     "format": "{icon} {}",
-  //     "return-type": "json",
-  //     "max-length": 20,
-  //     "format-icons": {
-  //         "spotify": " ",
-  //         "default": " "
-  //     },
-  //     "escape": true,
-  //     "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-  //     "on-click": "playerctl play-pause"
+  //   "interval": 30,
+  //   "format": "{icon} {}",
+  //   "return-type": "json",
+  //   "max-length": 20,
+  //   "format-icons": {
+  //     "spotify": " ",
+  //     "default": " ",
+  //   },
+  //   "escape": true,
+  //   "exec": "$HOME/.config/system_scripts/mediaplayer.sh 2> /dev/null",
+  //   "on-click": "playerctl play-pause",
   // },
   "custom/launcher": {
     "format": " ",

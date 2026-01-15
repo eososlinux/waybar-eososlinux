@@ -10,7 +10,7 @@ window {
 }
 
 window#waybar {
-  /* background-color: #1a1b26; */
+  background-color: #1a1b26;
   background: rgba(0, 0, 0, 0);
   border-radius: 15px;
   margin-top: 6px;
@@ -64,6 +64,20 @@ window#waybar.hidden {
   color: #e0af68;
   background: transparent;
   font-size: 2px;
+}
+
+#bluetooth {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 6px;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: none;
+  color: #e0af68;
+  background: #222330;
 }
 
 #network {
@@ -266,14 +280,15 @@ window#waybar.hidden {
   margin: 0 7.5px;
 }
 
-/* #custom-media { */
-/*   margin-top: 6px; */
-/*   margin-left: 8px; */
-/*   padding-left: 10px; */
-/*   padding-right: 10px; */
-/*   margin-bottom: 0px; */
-/*   border-radius: 10px; */
-/*   transition: none; */
-/*   color: #161320; */
-/*   background: #f2cdcd; */
-/* } */
+#custom-spotify {
+  margin-top: 6px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 6px;
+  border-radius: 18px;
+  transition: none;
+  font-weight: bold;
+  color: #161320;
+  background: #f2cdcd;
+}
